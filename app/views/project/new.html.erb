@@ -1,0 +1,20 @@
+<h2>Hola Mundo!</h2>
+
+<form method="post" action="/project" id="create_project"> 
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <h2>Nombre</h2>
+    <input name="nombre">
+    <h2>Descripción </h2>
+    <input name="description">
+    <h2>Fecha Comienzo</h2>
+    <input type="date" name="fecha_comienzo">
+    <h2>Fecha Termino</h2>
+    <input type="date" name="fecha_termino">
+    <h2>Estado</h2>
+    <select name="estado"> 
+        <option value="propuesta"> Propuesta</option>   
+        <option value="en_progreso">En Progreso </option>
+        <option value="terminado">Terminado</option>    
+    </select>
+    <input type="submit" value="Enviar">
+</form>
